@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Zam Wesell",
+        "movie": "Attack of the Clones"
+    },
+    {
+        "id": 1,
+        "name": "Dengar",
+        "movie": "The Empire Strikes Back and Star Wars: The Clone Wars"
+    },
+    {
+        "id": 2,
+        "name": "IG-88",
+        "movie": "The Empire Strikes Back"
+    },
+    {
+        "id": 3,
+        "name": "Asajj Ventress",
+        "movie": "Star Wars: The Clone Wars"
+    },
+    {
+        "id": 4,
+        "name": "Embo",
+        "movie": "Star Wars: The Clone Wars"
+    },
+    {
+        "id": 5,
+        "name": "Jango Fett",
+        "movie": "Attack of the Clones"
+    }
+]

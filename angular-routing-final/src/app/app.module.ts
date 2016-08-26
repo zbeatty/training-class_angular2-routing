@@ -24,10 +24,17 @@ import {PortalModule} from '@angular2-material/core/portal/portal-directives';
 import {OverlayModule} from '@angular2-material/core/overlay/overlay-directives';
 import {MdMenuModule} from '@angular2-material/menu/menu';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { routing, appRoutingProviders } from './app.routing';
+
+import { BountyHuntersModule } from './bounty-hunters/bounty-hunters.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,8 +59,12 @@ import { AppComponent } from './app.component';
     MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
+    routing,
+    BountyHuntersModule,
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })

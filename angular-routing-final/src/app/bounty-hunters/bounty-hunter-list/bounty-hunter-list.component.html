@@ -1,0 +1,10 @@
+<md-list>
+  <md-list-item *ngFor="let bountyHunter of bountyHunters">
+    <div (click)="selectBountyHunter(bountyHunter.id)" class="bounty-list">
+      <h3 md-line> {{ bountyHunter.name }} </h3>
+      <p md-line>
+        <span> {{ bountyHunter.movie }} </span>
+      </p>
+    </div>
+  </md-list-item>
+</md-list>

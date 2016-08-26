@@ -1,0 +1,12 @@
+nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+nav a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.active {
+    border-bottom: 1px blue solid;
+}
