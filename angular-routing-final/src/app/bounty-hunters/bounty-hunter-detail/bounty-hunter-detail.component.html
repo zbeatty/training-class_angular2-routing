@@ -1,6 +1,7 @@
 <div style="display: flex; flex-flow: row; justify-content: center;">
   <md-card *ngIf="bountyHunter">
     <h2>Hello {{ bountyHunter.name }}!!</h2>
+    <p *ngIf="showMovie">{{ bountyHunter.movie }}</p>
     <md-card-actions>
       <p>
         <md-button (click)="goBack()">BACK</md-button>

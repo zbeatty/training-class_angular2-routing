@@ -11,7 +11,9 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class BountyHunterDetailComponent implements OnInit {
   private sub: Subscription;
+  private sub2: Subscription;
   bountyHunter: IBountyHunter;
+  showMovie: boolean = false;
 
   constructor(private route: ActivatedRoute, private router: Router, private bountyHunterService: BountyHunterService) { }
 
@@ -28,6 +30,13 @@ export class BountyHunterDetailComponent implements OnInit {
           }
         });
     });
+
+    this.sub2 = this.route.queryParams.subscribe(queryParams => {
+      let showMovie = queryParams['showMovie'];
+      if (showMovie) {
+        this.showMovie = true;
+      }
+    });
   }
 
   goBack() {
@@ -36,6 +45,6 @@ export class BountyHunterDetailComponent implements OnInit {
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+    this.sub2.unsubscribe();
   }
-
 }
