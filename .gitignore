@@ -1,11 +1,14 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
+angular-routing-start/dist
+angular-routing-final/dist
+angular-routing-start/tmp
+angular-routing-final/tmp
 
 # dependencies
-/node_modules
+angular-routing-start/node_modules/
+angular-routing-final/node_modules/
 /bower_components
 
 # IDEs and editors
